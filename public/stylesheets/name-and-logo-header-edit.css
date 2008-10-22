@@ -1,0 +1,6 @@
+.app-name-and-logo-header .layout-left .titles { float: left; margin-top: 0; }
+.app-name-and-logo-header .titles div.title input { font-size: 90%; width:60%;}
+.app-name-and-logo-header .titles div.subtitle input { font-size: 70%; width:60%; }
+.app-name-and-logo-header a.ts-assets-selector-change-link {line-height:1em;}
+.app-name-and-logo-header .format-link {text-align:right;}
+.app-name-and-logo-header .format-link a {display:inline; cursor:pointer;}

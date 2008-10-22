@@ -12,6 +12,8 @@
 .app-name-and-logo-header .layout-left .logo  { float: left; }
 .app-name-and-logo-header a .titles { cursor: pointer;}
 .app-name-and-logo-header .layout-hidden .titles { display: none; }
-.app-name-and-logo-header .logo-no-img .titles {padding-left:15px;padding-bottom:25px;} /* padding for logos without an image */
+.app-name-and-logo-header .layout-no-img .titles {padding-left:15px;padding-bottom:25px;} /* padding for logos without an image */
 .app-name-and-logo-header .titles div.title { font-size: 210%; }
 .app-name-and-logo-header .titles div.subtitle { font-size: 170%; }
+
+.app-name-and-logo-header .clearfix {clear: both; visibility: hidden; font-size: 1px; line-height: 1px;}

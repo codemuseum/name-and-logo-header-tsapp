@@ -8,12 +8,22 @@ class Header < ActiveRecord::Base
   
   before_validation :set_default_layout
   
+  def layout_hidden?
+    self.layout == 'hidden'
+  end
+  
   def picture?
     @picture || ( !self.asset_urn.blank? && !self.asset_type.blank? )
   end
   
   def picture_url
     @picture_url ||= "#{ThriveSmart::Constants.ts_platform_host}/#{asset_type.downcase.pluralize}/#{asset_urn}.img"
+  end
+  
+  def after_initialize
+    if new_record?
+      self.layout = 'left'
+    end
   end
   
   protected

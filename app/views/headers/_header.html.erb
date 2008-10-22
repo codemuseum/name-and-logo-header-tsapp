@@ -1,8 +1,10 @@
-<div class="layout-<%=h header.layout %>">
+<div class="layout-<%=h header.layout %><%= header.picture? ? '' : ' layout-no-img' %>">
   <a class="home-link" href="/" title="Go to the home page">
+    <% if header.picture? %>
     <div class="logo">
       <span class="iefix"></span><%= image_tag header.picture_url %><span class="iefix"></span> &nbsp;
     </div>
+    <% end %>
     <div class="titles">
       <div class="title"><%=h header.title %></div>
       <div class="subtitle"><%=h header.subtitle %></div>
