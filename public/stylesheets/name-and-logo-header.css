@@ -1,0 +1,17 @@
+
+* html .app-name-and-logo-header .layout-left .iefix {  height:100px; display: inline-block; vertical-align: middle; }
+.app-name-and-logo-header a img {border:0;}
+.app-name-and-logo-header .layout-left .logo { height: 100px; line-height: 100px; }
+.app-name-and-logo-header .layout-left .logo img { vertical-align:middle; }
+.app-name-and-logo-header { padding: 10px; font-size: 80%; }
+.app-name-and-logo-header a { display: table; text-decoration: none; }
+
+*:first-child+html .app-name-and-logo-header a { display: inline-block; }
+* html .app-name-and-logo-header a { display: inline-block; }
+.app-name-and-logo-header .layout-left .titles { float: left; margin-top: 20px; margin-top /**/: 25px; }
+.app-name-and-logo-header .layout-left .logo  { float: left; }
+.app-name-and-logo-header a .titles { cursor: pointer;}
+.app-name-and-logo-header .layout-hidden .titles { display: none; }
+.app-name-and-logo-header .logo-no-img .titles {padding-left:15px;padding-bottom:25px;} /* padding for logos without an image */
+.app-name-and-logo-header .titles div.title { font-size: 210%; }
+.app-name-and-logo-header .titles div.subtitle { font-size: 170%; }

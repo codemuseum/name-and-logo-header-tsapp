@@ -1,0 +1,14 @@
+<%# Takes f -%>
+<% header = f.object %>
+<div class="layout-<%=h header.layout %>">
+  <div class="home-link">
+    <div class="logo">
+      <%= asset_urn_fields(f, [:pictures]) %>
+    </div>
+    <div class="titles">
+      <div class="title"><%= f.text_field :title %></div>
+      <div class="subtitle"><%= f.text_field :subtitle %></div>
+    </div>
+    <div class="clearfix">&nbsp;</div>
+  </div>
+</div>
